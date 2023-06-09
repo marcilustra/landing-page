@@ -4,27 +4,29 @@
         <title>The Greatest Living Show</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
-            <img src="" alt="logo" id="header-img"/>
-            <nav id="nav-bar">
-                <ul>
-                    <li>
-                        <a class="nav-link" href="">Watch</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="">Book</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="">Sign Up</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <div class="sticky-header">
+            <header id="header">
+                <img src="https://www.pngall.com/wp-content/uploads/2016/03/Book-PNG-3.png" alt="logo" id="header-img"/>
+                <nav id="nav-bar">
+                    <ul id="list-container">
+                        <li class='nav-list'>
+                            <a class="nav-link" href="#video">Watch</a>
+                        </li>
+                        <li class='nav-list'>
+                            <a class="nav-link" href="#product-picks">Book</a>
+                        </li>
+                        <li class='nav-list'>
+                            <a class="nav-link" href="#form">Sign Up</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
         <div id="product-brief">
-            <h1>The Greatest Living Show</h1>
+            <h1 id="page-title">The Greatest Living Show</h1>
             <p>
                 "The Greatest Living Show" is an extraordinary illustrated book that takes you on a captivating visual odyssey. Delve into the creative process of its talented creator, Itoki Hana, as they meticulously bring their artistic vision to life.
             </p>
@@ -34,6 +36,11 @@
             <p>
                 As you turn each page, discover the painstaking attention to detail that went into every brushstroke and color choice. Immerse yourself in Hana's world as they meticulously refine each character, scene, and setting, breathing life into their creations with masterful precision.
             </p>
+        </div>
+        <div id="video-container">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/qFow8LkHtlU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div id="product-brief">
             <p>
                 But the journey doesn't stop there. "The Greatest Living Show" takes a mesmerizing turn with an animated music video, further enriching the narrative experience. Experience the synergy of art and music as Hana collaborates with renowned musicians to craft a soul-stirring soundtrack that complements the illustrations seamlessly.
             </p>
@@ -44,12 +51,41 @@
                 "The Greatest Living Show" is a testament to the boundless imagination and artistic dedication of Itoki Hana. Explore their creative journey and let yourself be swept away by the sheer beauty and magic of this remarkable book and its accompanying animated music video.
             </p>
         </div>
-        <div id="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/qFow8LkHtlU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <hr>
+        <div id="product-picks">
+            <div class="product">
+                <div>
+                    <p>Buy the Book</p>
+                </div>
+                <div class="product-image">
+                    <img src="Book-PNG-3.png" alt="product-1">
+                </div>
+                <button class="selector" type="button" >SELECT</button>
+            </div>
+            <div class="product">
+                <div>
+                    <p>Buy the Book</p>
+                </div>
+                <div class="product-image">
+                    <img src="Book-PNG-3.png" alt="product-1">
+                </div>
+                <button class="selector" type="button" >SELECT</button>
+            </div>
+            <div class="product">
+                <div>
+                    <p>Buy the Book</p>
+                </div>
+                <div class="product-image">
+                    <img src="Book-PNG-3.png" alt="product-1">
+                </div>
+                <button class="selector" type="button" >SELECT</button>
+            </div>
         </div>
+        <hr>
         <div id="sign-up-form">
+            <h3>Sign Up for more</h3>
             <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <input id="email" type="email" required>
+                <input id="email" type="email" name="email" placeholder="itokihana@greatestlivingshow.com" required>
                 <input id="submit" type="submit" value="Sign Up">
             </form>
         </div>
